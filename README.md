@@ -10,7 +10,7 @@ Training the MNIST model using PyTorch.
 4. Install PyTorch Lightning: `pip install pytorch-lightning`
 5. Install matplotlib for visualization: `pip install matplotlib`
 6. Display a list of packages installed: `conda list`, or view the list in Anaconda-Navigator
-7. Generate a YAML file `environment.yml` (equal to a `conda-requirements.txt`) to include packages installed by both pip and conda: `conda env export > environment.yml`. Then anyone can reproduce the environment exactly with `conda env create -f environment.yml`
+7. Generate a YAML file `environment.yml` (equal to a `conda-requirements.txt`) that contains a list of all packages installed by both pip and conda in the current conda env: `conda env export > environment.yml`. Then anyone can reproduce the environment exactly with `conda env create -f environment.yml`
 
 ## Resources:
 
