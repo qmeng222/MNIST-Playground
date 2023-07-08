@@ -28,7 +28,15 @@ Training the MNIST model using PyTorch.
    - `(x_train, y_train)` represents the first item returned (a tuple of two items). `x_train` represent the training data or features, and `y_train` represent the corresponding labels
    - `(x_valid, y_valid)` similarly represents the second item returned. `x_valid` is the validation data or features, and `y_valid` is the validation labels.
    - `_` (an underscore) is a common convention in Python for a "throwaway" variable, a variable that you don't plan to use. In this case, the underscore represents the third item returned by the function. By assigning this value to `_`, your code is effectively saying "there's a third item returned by this function, but we don't care about it and aren't going to use it."
-4. fdf
+4. numpy array:
+   - numpy: a library for scientific and numerical computing in Python
+   - numpy array: multidimensional (2d, 3d, 4d, ...) table of data
+   - numpy takes advantage of C for numerical computation, while Python itself is thousands of times slower than C
+5. PyTorch tensors:
+   - PyTorch tensors are almost the same as numpy arrays
+   - but a tensor (matrix) has to be rectangular in shape with single numeric type for all elements
+   - however tensors can use GPUs, and are optimized for computation in GPUs (faster than numpy arrays)
+   - PyTorch implements Autograd (automatically comopute gradients, chain rule is avoided)
 
 ## Resources:
 
