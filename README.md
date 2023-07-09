@@ -37,6 +37,41 @@ Training the MNIST model using PyTorch.
    - but a tensor (matrix) has to be rectangular in shape with single numeric type for all elements
    - however tensors can use GPUs, and are optimized for computation in GPUs (faster than numpy arrays)
    - PyTorch implements Autograd (automatically comopute gradients, chain rule is avoided)
+6. What does "unsqueeze" do in Pytorch? Let's consider a 3D input tensor x:
+
+   ```python
+   import torch
+
+   x = torch.tensor([[[1, 2, 3],
+                      [4, 5, 6]],
+
+                     [[7, 8, 9],
+                      [10, 11, 12]]])
+   # shape of x is (2, 2, 3)
+
+   # add an extra dimension of depth 1 to the tensor long the second dimension -> (2, 1, 2, 3):
+   x_unsqueezed = x.unsqueeze(1)
+
+   # original tensor x:
+   [[[ 1,  2,  3],
+     [ 4,  5,  6]],
+
+    [[ 7,  8,  9],
+     [10, 11, 12]]]
+
+   # x_unsqueezed:
+   [[[[ 1,  2,  3],
+      [ 4,  5,  6]]],
+
+    [[[ 7,  8,  9],
+      [10, 11, 12]]]]
+   ```
+
+   Summary:
+   (2, 2) -> unsqueeze(0) -> (1, 2, 2)
+   (2, 2) -> unsqueeze(1) -> (2, 1, 2)
+   (2, 2) -> unsqueeze(2) -> (2, 2, 1)
+   ![squeeze/unsqueeze](/unsqueeze.png)
 
 ## Resources:
 
@@ -59,7 +94,6 @@ Training the MNIST model using PyTorch.
    - add a new channel named to the top of the channel list (highest priority): `conda config --add channels CHANNEL_NAME`
    - view the existing list of channels in conda configuration, and their priority order (the channel at the top of the list has the highest priority, which will be searched first when looking for a package to install): `conda config --get channels`
 4. [PyTorch](https://pytorch.org/tutorials/) is a machine learning framework based on the Torch library
-5. [WHat is torch.nn really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
-6. [PyTorch Lightning](https://www.pytorchlightning.ai/index.html) provides a high-level interface for PyTorch
-7. [pathlib](https://docs.python.org/3/library/pathlib.html) | object-oriented filesystem paths
-8.
+5. [PyTorch Lightning](https://www.pytorchlightning.ai/index.html) provides a high-level interface for PyTorch
+6. [pathlib](https://docs.python.org/3/library/pathlib.html) | object-oriented filesystem paths
+7. [WHat is torch.nn really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
