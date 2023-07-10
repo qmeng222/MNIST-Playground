@@ -67,11 +67,16 @@ Training the MNIST model using PyTorch.
       [10, 11, 12]]]]
    ```
 
-   Summary:
+   In summary:
    (2, 2) -> unsqueeze(0) -> (1, 2, 2)
    (2, 2) -> unsqueeze(1) -> (2, 1, 2)
    (2, 2) -> unsqueeze(2) -> (2, 2, 1)
    ![squeeze/unsqueeze](/unsqueeze.png)
+
+7. train/validation/test:
+   - train: model traning
+   - validation: (fine-tuning during training) prevent overfitting by providing an independent evaluation metric
+   - test: final evaluate model's performance on completely unseen data after model training and hyperparameter tuning
 
 ## Resources:
 
