@@ -2,7 +2,7 @@
 
 ## Structure:
 
-Train the MNIST model using PyTorch using:
+Train the MNIST model using:
 
 1. plain PyTorch
 2. PyTorch's nn module
