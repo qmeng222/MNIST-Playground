@@ -83,6 +83,8 @@ Train the MNIST model using:
    - train: model traning
    - validation: (fine-tuning during training) prevent overfitting by providing an independent evaluation metric, if train_accuracy > valid_accuracy --> overfitted
    - test: final evaluate model's performance on completely unseen data after model training and hyperparameter tuning
+8. shuffle: randomize of the order of the training data during the training process. If the training data is ordered in a particular way, the model may learn to depend on the order of the examples rather than the underlying patterns in the data.
+   original data: [0 1 2 3 4 5 6 7 8 9] --> shuffled data: [9 0 6 3 7 8 1 4 2 5]
 
 ## Resources:
 
