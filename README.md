@@ -1,6 +1,12 @@
 # MNIST-Playground
 
-Training the MNIST model using PyTorch.
+## Structure:
+
+Train the MNIST model using PyTorch using:
+
+1. plain PyTorch
+2. PyTorch's nn module
+3. PyTorch Lightning
 
 ## Setup:
 
