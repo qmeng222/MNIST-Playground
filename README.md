@@ -75,7 +75,7 @@ Training the MNIST model using PyTorch.
 
 7. train/validation/test:
    - train: model traning
-   - validation: (fine-tuning during training) prevent overfitting by providing an independent evaluation metric
+   - validation: (fine-tuning during training) prevent overfitting by providing an independent evaluation metric, if train_accuracy > valid_accuracy --> overfitted
    - test: final evaluate model's performance on completely unseen data after model training and hyperparameter tuning
 
 ## Resources:
