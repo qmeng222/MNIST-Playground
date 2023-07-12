@@ -15,8 +15,10 @@ Train the MNIST model using:
 3. Install PyTorch: `conda install pytorch::pytorch torchvision torchaudio -c pytorch`
 4. Install PyTorch Lightning: `pip install pytorch-lightning`
 5. Install matplotlib for visualization: `pip install matplotlib`
-6. Display a list of packages installed: `conda list`, or view the list in Anaconda-Navigator
-7. Generate a YAML file `environment.yml` (equal to a `conda-requirements.txt`) that contains a list of all packages installed by both pip and conda in the current conda env: `conda env export > environment.yml`. Then anyone can reproduce the environment exactly with `conda env create -f environment.yml`
+6. Install the tensorboard package to visualize the model's training and evaluation: `pip install tensorboard`
+7. Display a list of packages installed: `conda list`, or view the list in Anaconda-Navigator
+8. Generate a YAML file `environment.yml` (equal to a `conda-requirements.txt`) that contains a list of all packages installed by both pip and conda in the current conda env: `conda env export > environment.yml`. Then anyone can reproduce the environment exactly with `conda env create -f environment.yml`
+9. Run the tensorboard local server under the "DL-env": `tensorboard --logdir tb_logs`
 
 ## Study notes:
 
