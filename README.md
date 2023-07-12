@@ -79,7 +79,7 @@ Train the MNIST model using:
    (2, 2) -> unsqueeze(0) -> (1, 2, 2)
    (2, 2) -> unsqueeze(1) -> (2, 1, 2)
    (2, 2) -> unsqueeze(2) -> (2, 2, 1)
-   ![squeeze/unsqueeze](/unsqueeze.png)
+   ![squeeze/unsqueeze](/images/unsqueeze.png)
 
 7. train/validation/test:
    - train: model traning
@@ -112,3 +112,8 @@ Train the MNIST model using:
 5. [PyTorch Lightning](https://www.pytorchlightning.ai/index.html) provides a high-level interface for PyTorch
 6. [pathlib](https://docs.python.org/3/library/pathlib.html) | object-oriented filesystem paths
 7. [WHat is torch.nn really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
+
+# Next steps:
+
+![ns1](/images/next-steps1.png)
+![ns1](/images/next-steps2.png)
